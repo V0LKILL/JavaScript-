@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ерёменко</title>
+    <style>
+        ul.header__list li{
+            display: inline;
+            padding: 20px;
+            font-size: 21px;
+        }
+
+        .header__list {
+            padding: 0;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .intro__title{
+            width: 450px;
+            display: block;
+            font-family: Segoe UI;
+            font-weight: lighter;
+            font-size: 40px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .header__nav {
+            margin: 30px auto;
+        }
+ 
+        .header__logo {
+            position: absolute;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .input__number {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .feedback {
+            padding: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__logo">
+                <a href="">
+                    <img src="https://images-platform.99static.com/vCheVoFU54l2dkvveZtoIIwms_U=/139x127:1875x1863/500x500/top/smart/99designs-contests-attachments/108/108189/attachment_108189048" alt=""  >
+                </a>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="header__list" id="header__list_id">
+                    <li class="header__item">
+                        <a href="" class="header__link"
+                            id="product">Предложить игру</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="https://ru.goobix.com/" class="header__link" 
+                            id="other_games">Другие игры</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__link" id="contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <hr />
+    </header>
+
+    <article>
+        <h1 class="intro__title">
+            Сыграйте в <b>интересную игру:</b> "Угадай число"
+        </h1> 
+        <section class='input__number'>
+            <p>
+                Мы загадали одно из чисел от '1' до '10'. Введите Ваш вариант, <u>возможно угадаете:</u>
+            </p>
+            <input type="number" name="user_numder" id="user_number" placeholder="Ваше число">
+            <button>Проверить</button>
+        </section>
+    </article>
+
+    <article class="feedback">
+        <section>
+            <h3>Вам понравилась игра?</h3>
+        </section>
+        <select>
+            <option value="value1" selected>Очень понравилась</option>
+            <option value="value2">Не плохо</option>
+            <option value="value3">Не понравилась</option>
+        </select>
+    </article>
+</body>
+
+</html>
