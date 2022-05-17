@@ -2,7 +2,7 @@ let nums = {
     num: 7,
     res: 1,
     factorial: function(num) {
-        for (let i = 2; i<this.num; i++)
+        for (let i = 1; i<=this.num; i++)
         this.res=this.res*i;
       console.log(this.res)
       }
