@@ -14,21 +14,21 @@ let arr5 = [7, 9, 0, -2];
 
 
 function firstI (arr, n) {
-  let res = []
-  let num = n || 1
+  let res = [];
+  let num = n || 1;
      
   for (let i =0; i<num; i++) {
-    Number.isInteger(arr[i])? res.push(arr[i]):res
+    Number.isInteger(arr[i])? res.push(arr[i]):res;
   }
   return res
 }
 
 
-console.log(firstI(arr1))
-console.log(firstI(arr2, 3))
-console.log(firstI(arr3, 3))
-console.log(firstI(arr4, 6))
-console.log(firstI(arr5, -3))
+console.log(firstI(arr1));
+console.log(firstI(arr2, 3));
+console.log(firstI(arr3, 3));
+console.log(firstI(arr4, 6));
+console.log(firstI(arr5, -3));
 
 //   ----------------------------------------
 
